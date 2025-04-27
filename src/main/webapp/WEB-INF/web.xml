@@ -5,58 +5,12 @@
                              https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
   version="6.0">
 
-  <!-- 1) 配置一个 Servlet -->
-  <servlet>
-    <servlet-name>RegisterServlet</servlet-name>
-    <servlet-class>hx.servlet.RegisterServlet</servlet-class>
-  </servlet>
 
-  <!-- 2) 给它配置 URL 映射: /RegisterServlet -->
-  <servlet-mapping>
-    <servlet-name>RegisterServlet</servlet-name>
-    <url-pattern>/RegisterServlet</url-pattern>
-  </servlet-mapping>
 
-  <!-- 如果你还想让它同时映射 /register，可以再来一个 -->
-  <servlet-mapping>
-    <servlet-name>RegisterServlet</servlet-name>
-    <url-pattern>/register</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>hx.servlet.LoginServlet</servlet-class>
-  </servlet>
-  <!-- web.xml 中 -->
-  <servlet>
-    <servlet-name>QueryServlet</servlet-name>
-    <servlet-class>hx.servlet.QueryServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>DeleteServlet</servlet-name>
-    <servlet-class>hx.servlet.DeleteServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>UpdateServlet</servlet-name>
-    <servlet-class>hx.servlet.UpdateServlet</servlet-class>
-  </servlet>
 
-  <servlet-mapping>
-    <servlet-name>UpdateServlet</servlet-name>
-    <url-pattern>/UpdateServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>DeleteServlet</servlet-name>
-    <url-pattern>/DeleteServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>QueryServlet</servlet-name>
-    <url-pattern>/QueryServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>LoginServlet</servlet-name>
-    <url-pattern>/LoginServlet</url-pattern>
-  </servlet-mapping>
-  <!-- 如果你还有其他Servlet或Filter，也写在这里面 -->
+
+
+
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>

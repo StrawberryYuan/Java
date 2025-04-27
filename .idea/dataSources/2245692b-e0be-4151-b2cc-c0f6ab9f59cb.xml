@@ -1015,7 +1015,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="293" parent="1" name="OnlineExamDB">
-      <LastIntrospectionLocalTimestamp>2025-03-24.11:29:04</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-04-25.01:01:21</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="294" parent="1" name="mysql.infoschema">
@@ -1041,51 +1041,101 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <check id="299" parent="298" name="users_chk_1">
+    <table id="299" parent="293" name="question">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <check id="300" parent="298" name="users_chk_1">
       <Predicate>`sex` in (_utf8mb4\&apos;ç&#x94;·\&apos;,_utf8mb4\&apos;å¥³\&apos;)</Predicate>
     </check>
-    <column id="300" parent="298" name="userId">
-      <AutoIncrement>16</AutoIncrement>
+    <column id="301" parent="298" name="userId">
+      <AutoIncrement>27</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="301" parent="298" name="userName">
+    <column id="302" parent="298" name="userName">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="302" parent="298" name="password">
+    <column id="303" parent="298" name="password">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="303" parent="298" name="sex">
+    <column id="304" parent="298" name="sex">
       <Position>4</Position>
       <StoredType>char(1)|0s</StoredType>
     </column>
-    <column id="304" parent="298" name="email">
+    <column id="305" parent="298" name="email">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <index id="305" parent="298" name="PRIMARY">
+    <index id="306" parent="298" name="PRIMARY">
       <ColNames>userId</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="306" parent="298" name="email">
+    <index id="307" parent="298" name="email">
       <ColNames>email</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="307" parent="298" name="PRIMARY">
+    <key id="308" parent="298" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="308" parent="298" name="email">
+    <key id="309" parent="298" name="email">
       <UnderlyingIndexName>email</UnderlyingIndexName>
+    </key>
+    <column id="310" parent="299" name="questionId">
+      <AutoIncrement>1</AutoIncrement>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="311" parent="299" name="title">
+      <Comment>题目：10-8=?</Comment>
+      <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="312" parent="299" name="optionA">
+      <Comment>A:9</Comment>
+      <Position>3</Position>
+      <StoredType>varchar(20)|0s</StoredType>
+    </column>
+    <column id="313" parent="299" name="optionB">
+      <Comment>B:1</Comment>
+      <Position>4</Position>
+      <StoredType>varchar(20)|0s</StoredType>
+    </column>
+    <column id="314" parent="299" name="optionC">
+      <Comment>C:2</Comment>
+      <Position>5</Position>
+      <StoredType>varchar(20)|0s</StoredType>
+    </column>
+    <column id="315" parent="299" name="optionD">
+      <Comment>D:0</Comment>
+      <Position>6</Position>
+      <StoredType>varchar(20)|0s</StoredType>
+    </column>
+    <column id="316" parent="299" name="answer">
+      <Comment>正确答案：A/B/C/D</Comment>
+      <Position>7</Position>
+      <StoredType>char(1)|0s</StoredType>
+    </column>
+    <index id="317" parent="299" name="PRIMARY">
+      <ColNames>questionId</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="318" parent="299" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

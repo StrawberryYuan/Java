@@ -2,22 +2,23 @@ package hx.servlet;
 
 import hx.entity.Users;
 import hx.service.UsersService;
-
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
+
 import java.io.IOException;
 
+@WebServlet("/UpdateServlet")
 public class UpdateServlet extends HttpServlet {
-  private UsersService usersService = new UsersService();
+
+  private final UsersService usersService = new UsersService();
 
   @Override
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
     String userName = request.getParameter("userName");
-    // 根据用户名查询当前用户信息
     Users user = usersService.getUserByName(userName);
     request.setAttribute("user", user);
-    // 转发到 update.jsp
     request.getRequestDispatcher("/update.jsp").forward(request, response);
   }
 
@@ -33,7 +34,6 @@ public class UpdateServlet extends HttpServlet {
     Users user = new Users(userName, password, sex, email);
     usersService.updateUser(user);
 
-    // 更新后重定向到查询页面
     response.sendRedirect(request.getContextPath() + "/QueryServlet");
   }
 }

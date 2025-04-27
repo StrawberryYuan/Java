@@ -9,7 +9,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db07fa53-8c34-48ec-a714-e33506e644db" name="更改" comment="更新" />
+    <list default="true" id="db07fa53-8c34-48ec-a714-e33506e644db" name="更改" comment="更新">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/dao/QuestionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/entity/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/filter/CharacterEncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/filter/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/listener/SystemInitListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/listener/UserSessionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/service/IQuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/service/QuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/servlet/AddQuestionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/servlet/DeleteQuestionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/servlet/ExamServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/servlet/QuestionListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/servlet/SubmitExamServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hx/servlet/UpdateQuestionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/addQuestion.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/editQuestion.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/exam.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/questionList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/score.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hx/servlet/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hx/servlet/DeleteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hx/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hx/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hx/servlet/QueryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hx/servlet/QueryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hx/servlet/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hx/servlet/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hx/servlet/UpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hx/servlet/UpdateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/left.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/personalinfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/personalinfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/userinfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userinfo.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +50,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,10 +96,10 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/chumengyuan/code/javaweb/experiment1&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;工件&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15546875&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -77,6 +109,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
     </key>
   </component>
@@ -196,7 +229,25 @@
       <workItem from="1742994202320" duration="698000" />
       <workItem from="1743034497992" duration="4398000" />
       <workItem from="1743040553367" duration="4323000" />
-      <workItem from="1743416398072" duration="328000" />
+      <workItem from="1743416398072" duration="1616000" />
+      <workItem from="1744251612165" duration="1674000" />
+      <workItem from="1744593517456" duration="161000" />
+      <workItem from="1744593686527" duration="1094000" />
+      <workItem from="1744683570281" duration="321000" />
+      <workItem from="1744685160119" duration="6000" />
+      <workItem from="1744685360559" duration="1567000" />
+      <workItem from="1744856742574" duration="1956000" />
+      <workItem from="1744859133184" duration="1631000" />
+      <workItem from="1745230596089" duration="820000" />
+      <workItem from="1745289162955" duration="2741000" />
+      <workItem from="1745540465908" duration="16322000" />
+      <workItem from="1745569455209" duration="207000" />
+      <workItem from="1745577554076" duration="948000" />
+      <workItem from="1745591403712" duration="136000" />
+      <workItem from="1745591551856" duration="79000" />
+      <workItem from="1745592295383" duration="158000" />
+      <workItem from="1745713397135" duration="2197000" />
+      <workItem from="1745716008460" duration="615000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <option name="closed" value="true" />
